@@ -1,0 +1,66 @@
+<html>
+   <head>
+<script>
+function sbmt(){
+var fname=document.getElementById('txt1').value;
+
+var sname=document.getElementById('txt2').value;
+alert(fname+" "+sname);
+}
+function clr(){
+var txt1=document.getElementById('txt1').value="";
+var txt1=document.getElementById('txt2').value="";
+}
+</script>
+<style>
+#sub{
+background-color: yellow;
+color: blue;
+width: 100px;
+height: 40px;
+cursor: pointer;
+}
+#clr{
+background-color: yellow;
+color: blue;
+width: 100px;
+height: 40px;
+cursor: pointer;
+}
+body{
+   background-color: aqua;
+}
+td{
+   font-family: Arial, Helvetica, sans-serif;
+}
+#txt1{
+   border-color: brown;
+   width: 200px;
+   border-radius: 5px;
+}
+#txt2{
+   border-color: brown;
+   width: 200px;
+   border-radius: 5px;
+}
+</style>
+   </head>
+   <body>
+      <div class="tab">
+      <table>
+         <tr>
+            <td>First name :</td>
+            <td><input type="text" id="txt1"></td>
+         </tr>
+ <tr>
+            <td>Last name :</td>
+            <td><input type="text" id="txt2"></td>
+         </tr>
+ </table>
+</div>
+<br> <br>
+<input type="button" id="sub" value="submit" onclick="sbmt()"> <br> <br> 
+<input type="button" id="clr" value="clear" onclick="clr()">
+     
+   </body>
+</html>
